@@ -27,6 +27,6 @@
 #include <SDL.h>
 #include <SDL_thread.h>
 
-
+#undef main
 
 #include <assert.h>

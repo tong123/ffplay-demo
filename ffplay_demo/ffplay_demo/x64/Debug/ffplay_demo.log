@@ -1,6 +1,36 @@
 ﻿  ffplay.c
-d:\vs2015_space\ffmpeg_workspace\ffplay-demo\ffplay_demo\ffmpeg_sdl\include\libavutil\rational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-d:\vs2015_space\ffmpeg_workspace\ffplay-demo\ffplay_demo\ffplay_demo\ffplay.c(36): warning C4026: 使用形参表声明的函数
-d:\vs2015_space\ffmpeg_workspace\ffplay-demo\ffplay_demo\ffplay_demo\ffplay.c(38): warning C4716: “SDL_main”: 必须返回一个值
-MSVCRTD.lib(exe_main.obj) : error LNK2019: 无法解析的外部符号 main，该符号在函数 "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ) 中被引用
-D:\vs2015_space\ffmpeg_workspace\ffplay-demo\ffplay_demo\x64\Debug\ffplay_demo.exe : fatal error LNK1120: 1 个无法解析的外部命令
+c:\users\tong123\downloads\ffmpeg-4.0.2\ffmpeg-4.0.2\libavutil\rational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\git_space\ffplay-demo\ffplay_demo\ffplay_demo\ffplay.c(842): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+d:\git_space\ffplay-demo\ffplay_demo\ffplay_demo\ffplay.c(955): warning C4018: “<”: 有符号/无符号不匹配
+d:\git_space\ffplay-demo\ffplay_demo\ffplay_demo\ffplay.c(1042): warning C4244: “-=”: 从“int64_t”转换到“int”，可能丢失数据
+d:\git_space\ffplay-demo\ffplay_demo\ffplay_demo\ffplay.c(1127): warning C4244: “=”: 从“double”转换到“FFTSample”，可能丢失数据
+d:\git_space\ffplay-demo\ffplay_demo\ffplay_demo\ffplay.c(1141): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+d:\git_space\ffplay-demo\ffplay_demo\ffplay_demo\ffplay.c(1142): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+d:\git_space\ffplay-demo\ffplay_demo\ffplay_demo\ffplay.c(1165): warning C4018: “>=”: 有符号/无符号不匹配
+d:\git_space\ffplay-demo\ffplay_demo\ffplay_demo\ffplay.c(1617): warning C4018: “<”: 有符号/无符号不匹配
+d:\git_space\ffplay-demo\ffplay_demo\ffplay_demo\ffplay.c(2409): warning C4018: “>=”: 有符号/无符号不匹配
+d:\git_space\ffplay-demo\ffplay_demo\ffplay_demo\ffplay.c(2531): warning C4018: “>=”: 有符号/无符号不匹配
+d:\git_space\ffplay-demo\ffplay_demo\ffplay_demo\ffplay.c(2808): warning C4018: “<”: 有符号/无符号不匹配
+d:\git_space\ffplay-demo\ffplay_demo\ffplay_demo\ffplay.c(3183): warning C4244: “函数”: 从“int64_t”转换到“unsigned int”，可能丢失数据
+d:\git_space\ffplay-demo\ffplay_demo\ffplay_demo\ffplay.c(3200): warning C4018: “<”: 有符号/无符号不匹配
+d:\git_space\ffplay-demo\ffplay_demo\ffplay_demo\ffplay.c(3210): warning C4018: “>=”: 有符号/无符号不匹配
+d:\git_space\ffplay-demo\ffplay_demo\ffplay_demo\ffplay.c(3193): warning C4244: “初始化”: 从“double”转换到“int64_t”，可能丢失数据
+d:\git_space\ffplay-demo\ffplay_demo\ffplay_demo\ffplay.c(3316): warning C4244: “=”: 从“int64_t”转换到“double”，可能丢失数据
+d:\git_space\ffplay-demo\ffplay_demo\ffplay_demo\ffplay.c(3318): warning C4244: “=”: 从“int64_t”转换到“double”，可能丢失数据
+d:\git_space\ffplay-demo\ffplay_demo\ffplay_demo\ffplay.c(3320): warning C4244: “=”: 从“int64_t”转换到“double”，可能丢失数据
+d:\git_space\ffplay-demo\ffplay_demo\ffplay_demo\ffplay.c(3326): warning C4244: “函数”: 从“double”转换到“int64_t”，可能丢失数据
+d:\git_space\ffplay-demo\ffplay_demo\ffplay_demo\ffplay.c(3373): warning C4244: “函数”: 从“double”转换到“int64_t”，可能丢失数据
+d:\git_space\ffplay-demo\ffplay_demo\ffplay_demo\ffplay.c(3378): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
+d:\git_space\ffplay-demo\ffplay_demo\ffplay_demo\ffplay.c(3383): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+d:\git_space\ffplay-demo\ffplay_demo\ffplay_demo\ffplay.c(3390): warning C4244: “=”: 从“double”转换到“int64_t”，可能丢失数据
+d:\git_space\ffplay-demo\ffplay_demo\ffplay_demo\ffplay.c(3427): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+d:\git_space\ffplay-demo\ffplay_demo\ffplay_demo\ffplay.c(3433): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+d:\git_space\ffplay-demo\ffplay_demo\ffplay_demo\ffplay.c(3499): warning C4090: “=”: 不同的“const”限定符
+d:\git_space\ffplay-demo\ffplay_demo\ffplay_demo\ffplay.c(3535): warning C4090: “初始化”: 不同的“const”限定符
+d:\git_space\ffplay-demo\ffplay_demo\ffplay_demo\ffplay.c(3536): warning C4090: “初始化”: 不同的“const”限定符
+d:\git_space\ffplay-demo\ffplay_demo\ffplay_demo\ffplay.c(3537): warning C4090: “初始化”: 不同的“const”限定符
+d:\git_space\ffplay-demo\ffplay_demo\ffplay_demo\ffplay.c(3558): warning C4090: “初始化”: 不同的“const”限定符
+d:\git_space\ffplay-demo\ffplay_demo\ffplay_demo\ffplay.c(3568): warning C4090: “初始化”: 不同的“const”限定符
+d:\git_space\ffplay-demo\ffplay_demo\ffplay_demo\ffplay.c(3569): warning C4090: “初始化”: 不同的“const”限定符
+d:\git_space\ffplay-demo\ffplay_demo\ffplay_demo\ffplay.c(3570): warning C4090: “初始化”: 不同的“const”限定符
+  ffplay_demo.vcxproj -> D:\git_space\ffplay-demo\ffplay_demo\x64\Debug\ffplay_demo.exe

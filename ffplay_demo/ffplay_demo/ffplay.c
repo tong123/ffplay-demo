@@ -31,12 +31,7 @@
 #include <stdint.h>
 #include "ffplay.h"
 
-
-int main()
-{
-
-}
-#if 0
+#if 1
 
 const char program_name[] = "ffplay";
 const int program_birth_year = 2003;
@@ -286,7 +281,9 @@ typedef struct VideoState {
 
 /* options specified by the user */
 static AVInputFormat *file_iformat;
-static const char *input_filename;
+//static const char *input_filename;
+static char *input_filename;
+
 static const char *window_title;
 static int default_width  = 640;
 static int default_height = 480;
@@ -3525,7 +3522,7 @@ static int opt_codec(void *optctx, const char *opt, const char *arg)
 }
 
 static int dummy;
-
+#if 1
 static const OptionDef options[] = {
     CMDUTILS_COMMON_OPTIONS
     { "x", HAS_ARG, { .func_arg = opt_width }, "force displayed width", "width" },
@@ -3576,14 +3573,14 @@ static const OptionDef options[] = {
         "read and decode the streams to fill missing information with heuristics" },
     { NULL, },
 };
-
+#endif
 static void show_usage(void)
 {
     av_log(NULL, AV_LOG_INFO, "Simple media player\n");
     av_log(NULL, AV_LOG_INFO, "usage: %s [options] input_file\n", program_name);
     av_log(NULL, AV_LOG_INFO, "\n");
 }
-
+#if 1
 void show_help_default(const char *opt, const char *arg)
 {
     av_log_set_callback(log_callback_help);
@@ -3618,7 +3615,7 @@ void show_help_default(const char *opt, const char *arg)
            "left double-click   toggle full screen\n"
            );
 }
-
+#endif
 /* Called from the main */
 int main(int argc, char **argv)
 {
@@ -3628,7 +3625,7 @@ int main(int argc, char **argv)
     init_dynload();
 
     av_log_set_flags(AV_LOG_SKIP_REPEATED);
-    parse_loglevel(argc, argv, options);
+    //parse_loglevel(argc, argv, options);
 
     /* register all codecs, demux and protocols */
 #if CONFIG_AVDEVICE
@@ -3643,8 +3640,9 @@ int main(int argc, char **argv)
 
     show_banner(argc, argv, options);
 
-    parse_options(NULL, argc, argv, options, opt_input_file);
-
+    //parse_options(NULL, argc, argv, options, opt_input_file);
+	char filename[] = "D://1.mp4";
+	input_filename = filename;
     if (!input_filename) {
         show_usage();
         av_log(NULL, AV_LOG_FATAL, "An input file must be specified\n");

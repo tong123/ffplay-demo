@@ -18,9 +18,15 @@
     <ClCompile Include="ffplay.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="cmdutils.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ffplay.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="cmdutils.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
