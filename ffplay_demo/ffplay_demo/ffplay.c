@@ -32,12 +32,9 @@
 #include "ffplay.h"
 
 
-int main(int argc, char **argv)
+int main()
 {
-	printf("\n");
-	while (1)
-	{
-	}
+
 }
 #if 0
 

@@ -1,3 +1,6 @@
 ﻿  ffplay.c
-d:\vs2015_space\ffmpeg_workspace\ffplay_demo\ffmpeg_sdl\include\libavutil\rational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-d:\vs2015_space\ffmpeg_workspace\ffplay_demo\ffplay_demo\ffplay.h(2): error C2059: 语法错误:“字符串”
+d:\vs2015_space\ffmpeg_workspace\ffplay-demo\ffplay_demo\ffmpeg_sdl\include\libavutil\rational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\vs2015_space\ffmpeg_workspace\ffplay-demo\ffplay_demo\ffplay_demo\ffplay.c(36): warning C4026: 使用形参表声明的函数
+d:\vs2015_space\ffmpeg_workspace\ffplay-demo\ffplay_demo\ffplay_demo\ffplay.c(38): warning C4716: “SDL_main”: 必须返回一个值
+MSVCRTD.lib(exe_main.obj) : error LNK2019: 无法解析的外部符号 main，该符号在函数 "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ) 中被引用
+D:\vs2015_space\ffmpeg_workspace\ffplay-demo\ffplay_demo\x64\Debug\ffplay_demo.exe : fatal error LNK1120: 1 个无法解析的外部命令

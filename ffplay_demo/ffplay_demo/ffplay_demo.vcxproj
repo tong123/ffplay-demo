@@ -101,14 +101,15 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_INTEL;WIN32;_Windows;_CRT_SECURE_NO_DEPRECATE;_WINNT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>D:\vs2015_space\ffmpeg_workspace\ffplay_demo\ffmpeg_sdl\SDL2-devel-2.0.8-VC\SDL2-2.0.8\include;D:\vs2015_space\ffmpeg_workspace\ffplay_demo\ffmpeg_sdl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\vs2015_space\ffmpeg_workspace\ffplay-demo\ffplay_demo\ffmpeg_sdl\SDL2-devel-2.0.8-VC\SDL2-2.0.8\include;D:\vs2015_space\ffmpeg_workspace\ffplay-demo\ffplay_demo\ffmpeg_sdl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsC</CompileAs>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>D:\vs2015_space\ffmpeg_workspace\ffplay_demo\ffmpeg_sdl\lib;D:\vs2015_space\ffmpeg_workspace\ffplay_demo\ffmpeg_sdl\SDL2-devel-2.0.8-VC\SDL2-2.0.8\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\vs2015_space\ffmpeg_workspace\ffplay-demo\ffplay_demo\ffmpeg_sdl\lib;D:\vs2015_space\ffmpeg_workspace\ffplay_demo\ffmpeg_sdl\SDL2-devel-2.0.8-VC\SDL2-2.0.8\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
