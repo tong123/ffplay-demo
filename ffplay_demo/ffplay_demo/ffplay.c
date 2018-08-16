@@ -2472,6 +2472,9 @@ static int audio_open(void *opaque, int64_t wanted_channel_layout, int wanted_nb
     wanted_spec.samples = FFMAX(SDL_AUDIO_MIN_BUFFER_SIZE, 2 << av_log2(wanted_spec.freq / SDL_AUDIO_MAX_CALLBACKS_PER_SEC));
     wanted_spec.callback = sdl_audio_callback;
     wanted_spec.userdata = opaque;
+#ifdef _WIN32
+	CoInitialize(NULL);
+#endif
     while (!(audio_dev = SDL_OpenAudioDevice(NULL, 0, &wanted_spec, &spec, SDL_AUDIO_ALLOW_FREQUENCY_CHANGE | SDL_AUDIO_ALLOW_CHANNELS_CHANGE))) {
         av_log(NULL, AV_LOG_WARNING, "SDL_OpenAudio (%d channels, %d Hz): %s\n",
                wanted_spec.channels, wanted_spec.freq, SDL_GetError());
@@ -2511,6 +2514,9 @@ static int audio_open(void *opaque, int64_t wanted_channel_layout, int wanted_nb
         av_log(NULL, AV_LOG_ERROR, "av_samples_get_buffer_size failed\n");
         return -1;
     }
+#ifdef _WIN32
+	CoUninitialize();
+#endif
     return spec.size;
 }
 
@@ -3641,7 +3647,7 @@ int main(int argc, char **argv)
     show_banner(argc, argv, options);
 
     //parse_options(NULL, argc, argv, options, opt_input_file);
-	char filename[] = "D://1.mp4";
+	char filename[] = "./my_video.mp4";
 	input_filename = filename;
     if (!input_filename) {
         show_usage();

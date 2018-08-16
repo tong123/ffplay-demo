@@ -22,7 +22,7 @@
     <ProjectGuid>{7CA7D5C4-0148-46AD-AFCB-C9170A32C95C}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>ffplay_demo</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.10240.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -41,7 +41,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -103,13 +103,13 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Users\tong123\Downloads\ffmpeg-4.0.2\ffmpeg-4.0.2;D:\git_space\ffplay-demo\ffplay_demo\ffmpeg_sdl\include;D:\git_space\ffplay-demo\ffplay_demo\ffmpeg_sdl\SDL2-devel-2.0.8-VC\SDL2-2.0.8\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\ffmpeg_sdl\include;$(SolutionDir)\ffmpeg_sdl\SDL2-devel-2.0.8-VC\SDL2-2.0.8\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAs>CompileAsC</CompileAs>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>D:\git_space\ffplay-demo\ffplay_demo\ffmpeg_sdl\SDL2-devel-2.0.8-VC\SDL2-2.0.8\lib\x64;D:\git_space\ffplay-demo\ffplay_demo\ffmpeg_sdl;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\vs2015_space\ffmpeg_workspace\ffplay-demo\ffplay_demo\ffmpeg_sdl\SDL2-devel-2.0.8-VC\SDL2-2.0.8\lib\x64;D:\vs2015_space\ffmpeg_workspace\ffplay-demo\ffplay_demo\ffmpeg_sdl;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2test.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
